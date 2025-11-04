@@ -9,4 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     reveals.forEach(reveal => observer.observe(reveal));
   }
+
+ window.scrollToSection = function (className) {
+  const section = document.querySelector('.' + className);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 });

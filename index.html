@@ -18,12 +18,15 @@
             <nav>
     
                 <ul class = "nav_links">
-                   <a href ="#home">HOME</a>
-                    <a href ="#about">OVERVIEW</a>
-                    <a href ="#Intiative">LEARNING HUB</a>
-                    <a href ="#Intiative">PATHWAYS</a>
-                    <a href ="#Intiative">HEADLINES</a>
-                    <a href ="#Intiative">INTERNSEEKER</a>
+                <a href="#" onclick="scrollToSection('mainScreen')">HOME</a>
+                <a href="#" onclick="scrollToSection('sectionOne')">OVERVIEW</a>
+                <a href="#" onclick="scrollToSection('Algo')">ALGORITHMS</a>
+                <a href="#" onclick="scrollToSection('hub')">LEARNING HUB</a>
+                <a href="#" onclick="scrollToSection('path')">PATHWAYS</a>
+                <a href="#" onclick="scrollToSection('robot')">SIMULATION</a>
+                <a href="#" onclick="scrollToSection('forHead')">HEADLINES</a>
+                <a href="#" onclick="scrollToSection('sectionThree')">INTERNSEEKER</a>
+               
                
                 </ul>
                 <button class="hamburger">
@@ -32,7 +35,7 @@
                     <div class="bar"></div>
                   </button>
             </nav>
-            <div class="cta" onclick="window.location.href='#contact'">
+            <div class="cta" onclick="scrollToSection('contact')">
                 <button>Contact</button>
             </div>
             
@@ -47,7 +50,7 @@
              <h2>Learning AI Incubator</h2>
              
               <div class="wrapperBut" onclick="window.location.href='#'">
-                <button onclick="window.location.href='#'">Learn More</button>
+                <button onclick="scrollToSection('mainScreen')">Learn More</button>
                 </div>
             </div>
              </div>
@@ -123,7 +126,7 @@
 
         
 
-        <section class = "sectionTwo">
+        <section class = "Algo">
 
           <div class="reveal-delay">
              <h3 style = "margin-top:400px; ">Algorithms</h3> 
@@ -157,7 +160,7 @@
 
         <section>
 
-            <section class = "sectionTwo">
+            <section class = "hub">
 
               <div class="reveal-delay">
             <h3>Learning Hub</h3> 
@@ -258,7 +261,7 @@
 
 
              <div class="reveal-delay">
-             
+  <section class = "path"></section>           
   <div class="contain">
     <main class="row">
       
@@ -401,7 +404,7 @@
 
 
 
-<section>
+<section class = "projects">
   <h3>Github RL Projects</h3> 
     <h4 style>Open Source Github Projects</h4>
     
@@ -434,7 +437,7 @@
 
 
 
-<section>
+<section class = "robot">
    <h3>Robotics Simulations</h3> 
    <h4 style>Train in Physics Based Environment</h4>
 
@@ -487,6 +490,8 @@ To simulate a robot with reinforcement learning, you always have a workflow plan
     </div>
 
     </div>
+
+<section class = "forHead"></section>    
 
 <section id="research">
 
@@ -679,7 +684,7 @@ Get full access to all sessions, panels, network mixers, and sponsor presentatio
 
 </div>
 
-
+<section>
 <div style = "margin-top:720px;"class="section-layout">
     <!-- Left Side - Cards -->
     <div class="intern-grid">
@@ -869,18 +874,17 @@ Internships are an important aspect to gaining professional, real-application ex
                   <h4>Site Map</h4>
                   </div>
                   
-                  <ul>
-                    <li><a href = "#">Home</a></li>
-                    <li><a href = "#">Overview</a></li>
-                    <li><a href = "#">Aspects</a></li>
-                    <li><a href = "#">Learning Hub</a></li>
-                    <li><a href = "#">Pathways</a></li>
-                    <li><a href = "#">Research</a></li>
-                    <li><a href = "#">Events</a></li>
-                    <li><a href = "#">InternSeeker</a></li>
-                    <li><a href = "#">Contact</a></li>
-
-                  </ul>
+                <ul>
+  <li><a onclick="scrollToSection('mainScreen', event)">HOME</a></li>
+  <li><a onclick="scrollToSection('sectionOne', event)">OVERVIEW</a></li>
+  <li><a onclick="scrollToSection('Algo', event)">ALGORITHMS</a></li>
+  <li><a onclick="scrollToSection('hub', event)">LEARNING HUB</a></li>
+  <li><a onclick="scrollToSection('path', event)">PATHWAYS</a></li>
+  <li><a onclick="scrollToSection('robot', event)">SIMULATION</a></li>
+  <li><a onclick="scrollToSection('forHead', event)">HEADLINES</a></li>
+  <li><a onclick="scrollToSection('sectionThree', event)">INTERNSEEKER</a></li>
+  <li><a onclick="scrollToSection('contact', event)">CONTACT</a></li>
+</ul>
 
                   </div>
                 </div>
@@ -895,9 +899,7 @@ Internships are an important aspect to gaining professional, real-application ex
                   <ul>
                     <li><a href = "#">About Us</a></li>
                     <li><a href = "#">Site Map</a></li>
-                    <li><a href = "#">Terms & Conditions</a></li>
-                    <li><a href = "#">Privacy Policy</a></li>
-                    <li><a href = "#">Legal Notice</a></li>
+                   
 
                   </ul>
 
